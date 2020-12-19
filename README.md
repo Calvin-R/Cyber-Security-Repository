@@ -24,8 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be more secure, in addition to restricting unauthorized access to the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Per Elastic, "Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing." Elastic's description of their Metricbeat tool states, "Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server."
 
 The configuration details of each machine may be found below.
 
