@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![ELK Stack Diagram](https://github.com/Calvin-R/Cyber-Security-Repository/blob/main/Diagrams/ELK%20Project%20Network%20Diagram(1).pdf)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Each playbook has its own file so that, if you wish, you can install only certain pieces of it, such as Filebeat.
 
  ![Playbook Files](https://github.com/Calvin-R/Cyber-Security-Repository/tree/main/Ansible)
 
@@ -21,7 +21,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly accessible, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly stable, in addition to restricting _____ to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
@@ -58,8 +58,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the use of playbooks written in YAML they are easy to read, update, and delpoy. This makes the configuration easier to implement at large or small scales.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -72,10 +71,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web-1
+- Web-2
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Web-1
+- Web-2
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
