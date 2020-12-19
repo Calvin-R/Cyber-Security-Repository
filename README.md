@@ -32,7 +32,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump-Box-Provisioner | Gateway  | 10.0.0.1   | Linux            |
+| Jump-Box-Provisioner | Gateway  | 10.0.0.4   | Linux            |
 | Web-1    |Web Server|10.0.0.6    |Linux             |
 | Web-2    |Web Server|10.0.0.5    |Linux             |
 | ELK-Server|Database  |10.1.0.4   |Linux             |
@@ -51,9 +51,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump-Box-Provisioner | No                  | 10.0.0.1 10.0.0.2    |
-| Web-1    | No                  |                      |
-| Web-2    | No                  |                      |
+| Jump-Box-Provisioner | No                  | My personal IP address    |
+| Web-1    | No                  | 10.0.0.4             |
+| Web-2    | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
