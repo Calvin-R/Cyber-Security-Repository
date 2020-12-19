@@ -81,11 +81,6 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Copy the .yml playbook files linked above to the /etc/ansible folder in your ansible container.
+- Edit the webservers portion of ansible host file to include the IP addresses of you web servers, and create a separate [elkserver(s)] section to do the same for the ELK server. The entry should appear as follows: [your.VM.IP] ansible_python_interpreter=/usr/bin/python3
+- Run the playbooks, and then navigate to http:[load-balancer-ip]/setup.php to check that the installation worked as expected for the web servers. To verify that you can load the ELK stack server, navigate to http://[your.VM.IP]:5601/app/kibana
