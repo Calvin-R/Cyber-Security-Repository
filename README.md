@@ -36,7 +36,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump-Box-Provisioner | Gateway  | 10.0.0.1   | Linux            |
 | Web-1    |Web Server|10.0.0.6    |Linux             |
 | Web-2    |Web Server|10.0.0.5    |Linux             |
-| ELK-Server|Database  |10.0.0.7   |Linux             |
+| ELK-Server|Database  |10.1.0.4   |Linux             |
 
 ### Access Policies
 
