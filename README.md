@@ -24,7 +24,6 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be more secure, in addition to restricting unauthorized access to the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-Per Elastic, "Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing." Elastic's description of their Metricbeat tool states, "Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server."
 
 The configuration details of each machine may be found below.
 
@@ -72,11 +71,12 @@ This ELK server is configured to monitor the following machines:
 - Web-2
 
 We have installed the following Beats on these machines:
-- Web-1
-- Web-2
+- Filebeats
+- Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Per Elastic, "Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing." It will also configure the Elastic search in Kibana so that you have all the correct ingest node pipelines, dashboards, and patterns needed to get started.
+- Elastic's description of their Metricbeat tool states, "Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server." It is a more generalized tool and allows you to select which metrics you want to collect.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
